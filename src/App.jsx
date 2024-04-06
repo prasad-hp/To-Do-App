@@ -25,7 +25,8 @@ function App() {
   }
 
   return (
-    <div className='justify-center'>
+    <div className='m-auto align-middle bg-cyan-500 max-w-xl p-10 rounded-lg mt-10'>
+      <h1 className='align-center text-center font-mono text-3xl text-yellow-300'>To-Do</h1>
       <AddToDo todoSave={saveTodo} />
       {todos.map((todoItem, index) => (
         <Todos

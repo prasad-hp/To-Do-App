@@ -13,7 +13,7 @@ function Todos(props){
         <>
             <div>
                     <ul>
-                        <li>
+                        <li className="h-14 text-xl text-white">
                         <span>
                             <button onClick={markAsDone} >{taskDone ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />}</button>
                         </span>

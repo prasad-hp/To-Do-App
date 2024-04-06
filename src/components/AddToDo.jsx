@@ -7,16 +7,15 @@ function AddToDo(props){
         setTodoText(newTodo)
     }
     return(
-        <>
-            <input name="todos" type="text" placeholder="Enter the Name of Todo" value={todoText} onChange={inputChange}/>
+        <div className="w-800px">
+            <input name="todos" type="text" placeholder="Enter the Name of Todo" value={todoText} onChange={inputChange} className="h-10 w-4/5 bg-white rounded-xl"/>
                 <span>
-                    <button onClick={()=>{
+                    <button className="bg-green-400 h-10 w-20 border-gray-600 rounded-xl m-2" onClick={()=>{
                         props.todoSave(todoText)
                         setTodoText("")}}>
-                        Add To-Do   
-                    </button>
+                        Add</button>
                 </span>
-        </>
+        </div>
     )
     
 }
